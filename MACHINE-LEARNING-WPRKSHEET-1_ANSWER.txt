@@ -1,0 +1,69 @@
+Q1 & Q10-
+1) C
+2) C
+3) C
+4) A
+5) A
+6) B
+7) A
+8) C
+9) A , D
+10) A, B, D
+
+11) what are outliers? explain IQR method for outlier detection?
+Ans-
+In statistics, an outlier is a data point that differs significantly from other observations.
+The outliers may suggest experimental errors, variability in a measurement, or an anomaly.
+However, not all outliers are bad. Some outliers signify that data is significantly different from others.
+
+IQR is used to measure variability by dividing a data set into quartiles. 
+The data is sorted in ascending order and split into 4 equal parts. 
+Q1, Q2, Q3 called first, second and third quartiles are the values which separate the 4 equal parts.
+Q1 represents the 25th percentile of the data.
+Q2 represents the 50th percentile of the data.
+Q3 represents the 75th percentile of the data.
+
+IQR is the range between the first and the third quartiles namely Q1 and Q3: IQR = Q3 – Q1. 
+The data points which fall below Q1 – 1.5 IQR or above Q3 + 1.5 IQR are outliers.
+Outliers can be highlighted by using boxplot.
+
+12) primary diff between bagging & boosting?
+Ans-Bagging is a way to decrease the variance in the prediction by generating additional data for training from dataset using combinations with repetitions to produce multi-sets of the original data. 
+Boosting is an iterative technique which adjusts the weight of an observation based on the last classification
+Bagging tries to solve over-fitting problem.
+Boosting tries to reduce bias.
+
+13) what is adjusted R2 in logistic regression? how it is calculated?
+Ans-
+Use adjusted R-squared to compare the goodness-of-fit for regression models that contain differing numbers of independent variables.
+Adjusted R-squared value can be calculated based on value of r-squared, number of independent variables (predictors), total sample size. Every time we add a independent variable to a model, the R-squared increases, even if the independent variable is insignificant.
+
+
+14) diff bet standardisation & normalisation
+Ans-
+Standardization-
+Mean and standard deviation is used for scaling.
+It is used when we want to ensure zero mean and unit standard deviation
+It is not bounded to a certain range.
+It is much less affected by outliers.
+Scikit-Learn provides a transformer called StandardScaler for standardization.
+It translates the data to the mean vector of original data to the origin and squishes or expands.
+It is useful when the feature distribution is Normal or Gaussian.
+It is a often called as Z-Score Normalization.
+
+Normallization-
+Minimum and maximum value of features are used for scaling.
+It is used when features are of different scales.
+Scales values between [0, 1] or [-1, 1].
+It is really affected by outliers.
+Scikit-Learn provides a transformer called MinMaxScaler for Normalization
+This transformation squishes the n-dimensional data into an n-dimensional unit hypercube.
+It is useful when we don’t know about the distribution.
+It is a often called as Scaling Normalization
+
+
+15) what is cross-validation? 1 adv & 1 disad?
+Ans-
+Cross-validation is a technique for evaluating ML models by training several ML models on subsets of the available input data and evaluating them on the complementary subset of the data
+Advantage-Improves accuracy,Reduce Overfitting,Hyperparameter Tuning.
+Disadvantage- Increases Training Time.

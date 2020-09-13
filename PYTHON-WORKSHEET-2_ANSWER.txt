@@ -1,0 +1,65 @@
+Q1 to Q8
+1) B
+2) C
+3) A
+4) B
+5) C
+6) C
+7) C
+8) A
+
+Q9 & Q10
+9) C , D
+10) A , D
+
+Q11 & Q13
+11)
+Ans-
+List and Tuple objects are sequences. 
+List and tuple is an ordered collection of items.
+A dictionary is a hash table of key-value pairs. Dictionary is unordered collection.
+List and dictionary objects are mutable i.e. it is possible to add new item or delete and item from it. 
+Tuple is an immutable object. Addition or deletion operations are not possible on tuple object.
+Each of them is a collection of comma-separated items. List items are enclosed in square brackets [], tuple items in round brackets or parentheses (), and dictionary items in curly brackets {}
+Set is a slightly different concept from a list or a tuple. A set, in Python, is just like the mathematical set. It does not hold duplicate values and is unordered ; not immutable, unlike a tuple.
+
+12)
+Ans-
+print('I ' + 'Love ' + 'Python') 
+
+13)
+The ord() function in Python accepts a string of length 1 as an argument and returns the unicode code point representation of the passed argument.
+For example ord('A') returns 65 which is a unicode code point value of character 'A'.
+type() function used to get variable data type in python.
+
+Q14 & Q15-
+14)
+Ans-
+# ax2 + bx + c = 0, where a, b and c are real numbers and a ≠ 0
+
+# Solve the quadratic equation ax**2 + bx + c = 0
+
+# import complex math module
+import cmath
+
+a = input("Enter number a :")
+b = input("Enter number b :")
+c = input("Enter number c :")
+
+# calculate the discriminant
+d = (b**2) - (4*a*c)
+
+# find two solutions
+solution1 = (-b-cmath.sqrt(d))/(2*a)
+solution2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(solution1,solution2))
+
+15)
+# Sum of natural numbers up to num
+num = input ("enter natural number")
+
+# Use formula for sum calculation.
+sum = num*(num+1)/2
+
+print("The sum is", sum)

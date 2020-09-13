@@ -1,0 +1,105 @@
+Q1 & Q2
+1) A , D
+2) A , B
+
+Q3 to Q10
+3) B
+4) B
+5) A
+6) C
+7) B
+8) B
+9) B
+10) C
+
+Q11 to Q15
+
+11)What is data-warehouse?
+Ans-A data warehouse is a data management system that is designed to perform support business intelligence (BI) activities, especially analytics. 
+Prime Objective of data warehouses is to perform queries and analysis and often contain large amounts of historical data. 
+The data within a data warehouse is derived from a wide range of sources such as application log files and transaction applications,etc.
+A data warehouse centralizes and consolidates large amounts of data from multiple sources. 
+Its analytical capabilities allow organizations to derive valuable business insights from their data to improve decision-making capability. 
+Over time, it builds a historical record that can be invaluable to data scientists and business analysts. 
+Data warehouse can be considered an organization’s “single source of truth” because of these capabilities.
+
+A typical data warehouse often includes the following components:-
+A relational database to store and manage data (RDBMS)
+An extraction, loading, and transformation (ELT) solution for preparing the data for analysis
+Statistical analysis, reporting, and data mining capabilities
+Client analysis tools for visualizing and presenting data to business users
+Analytical applications that generate actionable
+Information by applying machine learning and artificial intelligence (AI) algorithms.
+
+Functions of Data Warehouse Tools and Utilities:-
+Data Extraction − Involves gathering data from multiple heterogeneous sources.
+Data Cleaning − Involves finding and correcting the errors in data.
+Data Transformation − Involves converting the data from legacy format to warehouse format.
+Data Loading − Involves sorting, summarizing, consolidating, checking integrity, and building indices and partitions.
+Refreshing − Involves updating from data sources to warehouse.
+
+Please Note-Data cleaning and data transformation are important steps in improving the quality of data and data mining results which plays vital role in data science.
+
+12)What is difference between OLTP Vs OLAP?
+
+Ans- Below difference between OLTP (Online Tarnsaction Processing) & OLAP (Online Analytical processing)
+
+OLTP-	
+It extract data for Insert, Update, Delete  queries from the database.	
+OLTP and its transactions are the original source of data.	
+Transaction OLTP has short transactions.	
+The processing time of a transaction is comparatively less in OLTP.	
+Queries	Simpler queries.	
+Tables in OLTP database are normalized (3NF).	
+OLTP database must maintain data integrity constraint.	
+
+OLAP-
+Extract data for analyzing that helps in decision making.
+Different OLTPs database becomes the source of data for OLAP. 
+OLAP has long transactions.
+The processing time of a transaction is comparatively more in OLAP.
+Complex queries.
+Tables in OLAP database are not normalized.
+OLAP database does not get frequently modified. Hence, data integrity is not affected.
+
+
+13)What are various characteristics of data-warehouse?
+Ans-Below are data-sarehouse characteristics:
+
+Subject-oriented –A data warehouse is always a subject oriented as it delivers information about a theme instead of organization’s current operations. 
+That means the data warehousing process is proposed to handle with a specific theme which is more defined. These themes can be sales, distributions, marketing etc.
+A data warehouse never put emphasis only current operations.
+Instead, it focuses on demonstrating and analysis of data to make various decision. 
+It also delivers an easy and precise demonstration around particular theme by eliminating data which is not required to make the decisions.
+
+Integrated – Integration means shared entity to scale the all similar data from the different databases. 
+The data also required to be resided into various data warehouse in shared and generally granted manner.
+A data warehouse is built by integrating data from various sources of data such that a mainframe and a relational database. 
+In addition, it must have reliable naming conventions, format and codes. Integration of data warehouse benefits in effective analysis of data. 
+Reliability in naming conventions, column scaling, encoding structure etc. should be confirmed. 
+
+Time-Variant –In this data is maintained via different intervals of time such as weekly, monthly, or annually etc. 
+It founds various time limit which are structured between the large datasets and are held in online transaction process (OLTP). 
+The time limits for data warehouse is wide-ranged than that of operational systems. 
+The data resided in data warehouse is predictable with a specific interval of time and delivers information from the historical perspective. 
+It comprises elements of time explicitly or implicitly. Another feature of time-variance is that once data is stored in the data warehouse then it cannot be modified, alter, or updated.
+
+Non-Volatile –It also means that data is not erased or deleted when new data is inserted. 
+It evaluates the analysis within the technologies of warehouse.
+
+14)What is Star-Schema?
+Ans-
+Schema is a logical description of the entire database. 
+Star Schema:-Schema where in each dimension is represented with only one-dimension table.
+There is a fact table at the center.
+This dimension table contains the set of attributes. It contains the keys to each of four dimensions, namely time, item, branch, and location.
+Fact table is connected with dimention table.
+
+15)What do you mean by SETL?
+Ans-SETL is A programmable semantic extract-transform-load framework for semantic data warehouses.
+Below are the characteristics of SETL-
+•SETL builds on Semantic Web (SW) standards and tools.
+•SETL provides a number of powerful modules, classes, and methods for (dimensional and semantic) DW constructs and tasks.
+•SETL supports semantic and traditional data sources, semantic integration, and creating or publishing a (MD) semantic DW.
+•Using SETL, we perform a comprehensive experimental evaluation by producing a MD semantic DW that integrates a semantic and non semantic data sources.
+•SETL improves considerably over the competing solutions/tools in terms of productivity, KB quality, and performance.
