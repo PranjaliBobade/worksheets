@@ -1,0 +1,53 @@
+1.D
+2.C
+3.C
+4.C
+5.B
+6.B
+7.B
+8.D
+9.B
+10. Ans - The adjusted R2 will penalize us for adding independent variables (K in the equation) that do not fit the model. 
+Reason Being ,In regression analysis, it can be tempting to add more variables to the data as we think of them. 
+Some of those variables will be significant, but we can’t be sure that significance is just by chance. 
+The adjusted R2 will compensate for this by that penalizing us for those extra variables.
+While values are usually positive, they can be negative as well. 
+This could happen if your R2 is zero; After the adjustment, the value can dip below zero. 
+This usually indicates that your model is a poor fit for our data. 
+Other problems with our model can also cause sub-zero values, such as not putting a constant term in our model.
+
+11. Ans - 
+
+Lasso is a modification of linear regression, where the model is penalized for the sum of absolute values of the weights. 
+Lasso introduced a new hyperparameter, alpha, the coefficient to penalize weights.
+
+Ridge takes a step further and penalizes the model for the sum of squared value of the weights. 
+Thus, the weights not only tend to have smaller absolute values and more evenly distributed, but also tend to be close to zeros. 
+
+
+12.
+VIF (Variance Inflation Factor) - This correlation is a problem because independent variables should be independent.
+Multicollinearity occurs when independent variables in a regression model are correlated. 
+If the degree of correlation between variables is high enough, it can cause problems when we fit the model and interpret the results.
+
+The Variance Inflation Factor (VIF) is 1/Tolerance, it is always greater than or equal to 1. 
+There is no formal VIF value for determining presence of multicollinearity. 
+Values of VIF that exceed 10 are often regarded as indicating multicollinearity, but in weaker models values above 2.5 may be a cause for concern.
+
+13.
+Feature Scaling or Standardization: It is a step of Data Pre Processing which is applied to independent variables or features of data.
+It basically helps to normalise the data within a particular range. 
+Sometimes, it also helps in speeding up the calculations in an algorithm
+In improves the model performance.
+
+14.
+Coefficient of determination (the R-squared measure of goodness of fit); 
+Lack-of-fit sum of squares; Reduced chi-squared. Regression validation.
+
+15.
+From the given confusion matrix please find below calculated sensitivity, specificity, precision, recall and accuracy
+Sensitivity = TP/FN+TP = 0.45
+Specificity = TN/FP+TN = 0.16
+Precision = TP/TP+FP = 0.8
+Recall = TP/FN+TP = 0.45
+Accuracy =(TP+TN)/Total_Population = 0.42
