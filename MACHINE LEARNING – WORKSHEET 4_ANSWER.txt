@@ -1,0 +1,137 @@
+Q1)
+Ans- A
+
+Q2)
+Ans- A
+
+Q3)
+Ans- B
+
+Q4)
+Ans- C
+
+Q5)
+Ans- A
+
+Q6)
+Ans- C
+
+Q7)
+Ans- B
+
+Q8)
+Ans- B
+
+Q9)
+Ans-
+Gini Index
+=1−∑jp2j
+=1−((60/100)2+(40/100)2)
+=0.48
+
+Entropy
+=−∑jpjlog2pj
+
+# calculate the entropy for a dataset
+from math import log2
+# proportion of examples in each class
+class0 = 60/100
+class1 = 40/100
+# calculate entropy
+entropy = -(class0 * log2(class0) + class1 * log2(class1))
+# print the result
+print('entropy: %.3f bits' % entropy)
+Entropy: 0.971 bits
+
+Q10)
+Ans-
+Decision trees:
+1. choosing the best result at a given step does not ensure you will be headed down the route that will lead to the optimal decision when you make it to the final node of the tree, called the leaf node.
+2. Decision trees are prone to overfitting, especially when a tree is particularly deep.
+
+Random Forest-
+It minimize both error due to bias and error due to variance.
+Random forests mitigate this problem well. 
+A random forest is simply a collection of decision trees whose results are aggregated into one final result. 
+Their ability to limit overfitting without substantially increasing error due to bias is why they are such powerful models.
+One way Random Forests reduce variance is by training on different samples of the data. A second way is by using a random subset of features.
+
+Q11)
+Ans-
+Reason For scaling-
+It is a step of Data Pre Processing which is applied to independent variables or features of data. It basically helps to normalise the data within a particular range. Sometimes, it also helps in speeding up the calculations in an algorithm.
+
+Techniques Used-
+
+What is Normalization?
+Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1. It is also known as Min-Max scaling.
+
+Here’s the formula for normalization:
+
+Normalization equation
+Here, Xmax and Xmin are the maximum and the minimum values of the feature respectively.
+When the value of X is the minimum value in the column, the numerator will be 0, and hence X’ is 0
+On the other hand, when the value of X is the maximum value in the column, the numerator is equal to the denominator and thus the value of X’ is 1
+If the value of X is between the minimum and the maximum value, then the value of X’ is between 0 and 1
+     X-Xmin
+X'=  ________
+     Xmax-Xmin
+
+What is Standardization?
+Standardization is another scaling technique where the values are centered around the mean with a unit standard deviation. This means that the mean of the attribute becomes zero and the resultant distribution has a unit standard deviation.
+Here’s the formula for standardization:
+
+Standardization equation
+Feature scaling: Mu is the mean of the feature values and Feature scaling: Sigma is the standard deviation of the feature values. Note that in this case, the values are not restricted to a particular range.
+Now, the big question in your mind must be when should we use normalization and when should we use standardization? Let’s find out!
+
+      X-mu
+ X'= _____
+     sigma
+
+Q12)
+Ans-
+Gradient Descent is the most common optimization algorithm in machine learning and deep learning. 
+It is a first-order optimization algorithm. This means it only takes into account the first derivative when performing the updates on the parameters. On each iteration, we update the parameters in the opposite direction of the gradient of the objective function J(w) w.r.t the parameters where the gradient gives the direction of the steepest ascent. The size of the step we take on each iteration to reach the local minimum is determined by the learning rate α. Therefore, we follow the direction of the slope downhill until we reach a local minimum.
+In this article, we’ll cover gradient descent algorithm and its variants: Batch Gradient Descent, Mini-batch Gradient Descent, and Stochastic Gradient Descent.
+
+Let’s first see how gradient descent works on logistic regression before going into the details of its variants. For the sake of simplicity, let’s assume that the logistic regression model has only two parameters: weight w and bias b.
+1. Initialize weight w and bias b to any random numbers.
+2. Pick a value for the learning rate α. The learning rate determines how big the step would be on each iteration.
+If α is very small, it would take long time to converge and become computationally expensive.
+If α is large, it may fail to converge and overshoot the minimum.
+Therefore, plot the cost function against different values of α and pick the value of α that is right before the first value that didn’t converge so that we would have a very fast learning algorithm that converges 
+
+Q13)
+Ans-
+Failure of Classification Accuracy for Imbalanced Class Distributions
+
+Classification accuracy is a metric that summarizes the performance of a classification model as the number of correct predictions divided by the total number of predictions.
+
+Accuracy and error rate are the de facto standard metrics for summarizing the performance of classification models.
+Classification accuracy fails on classification problems with a skewed class distribution because of the intuitions developed by practitioners on datasets with an equal class distribution.
+Intuition for the failure of accuracy for skewed class distributions with a worked example.
+Kick-start your project with my new book Imbalanced Classification with Python, including step-by-step tutorials and the Python source code files for all examples.
+
+The most common metric used to evaluate the performance of a classification predictive model is classification accuracy. Typically, the accuracy of a predictive model is good (above 90% accuracy), therefore it is also very common to summarize the performance of a model in terms of the error rate of the model.
+Accuracy and its complement error rate are the most frequently used metrics for estimating the performance of learning systems in classification problems.
+Classification accuracy involves first using a classification model to make a prediction for each example in a test dataset. The predictions are then compared to the known labels for those examples in the test set. Accuracy is then calculated as the proportion of examples in the test set that were predicted correctly, divided by all predictions that were made on the test set.
+
+Accuracy = Correct Predictions / Total Predictions
+
+Classification accuracy is the most-used metric for evaluating classification models.
+The reason for its wide use is because it is easy to calculate, easy to interpret, and is a single number to summarize the model’s capability.
+As such, it is natural to use it on imbalanced classification problems, where the distribution of examples in the training dataset across the classes is not equal.
+This is the most common mistake made by beginners to imbalanced classification.
+
+Q14)
+Ans-
+Precision = TruePositives / (TruePositives + FalsePositives)
+Recall = TruePositives / (TruePositives + FalseNegatives)
+F1 Score = (2 * Precision * Recall) / (Precision + Recall)
+
+Q15)
+Ans-
+1.Fit(): Method calculates the parameters μ and σ and saves them as internal objects.
+2.Transform(): Method using these calculated parameters apply the transformation to a particular dataset.
+3.Fit_transform(): joins the fit() and transform() method for transformation of dataset.
