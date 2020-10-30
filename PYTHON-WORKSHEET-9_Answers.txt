@@ -1,0 +1,39 @@
+Q1) D
+Q2) A
+Q3) A
+Q4) D
+Q5) C
+Q6) D
+Q7) C
+Q8) A
+Q9) A , B ,C
+Q10) A , B , C , D
+Q11)
+import pandas as pd
+import numpy as np
+
+exam_data  = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew', 'Laura', 'Kevin', 'Jonas'],
+        'score': [12.5, 9, 16.5, np.nan, 9, 20, 14.5, np.nan, 8, 19],
+        'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+        'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
+labels = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+
+df = pd.DataFrame(exam_data , index=labels)
+print(df)
+
+Q12)
+df.head()
+
+Q13)
+df1=df[['name','score']]
+df1
+
+Q14)
+
+Q15)
+import pandas as pd 
+df_series = df["score"].between(15, 20, inclusive = True) 
+df[df_series] 
+
+
+
