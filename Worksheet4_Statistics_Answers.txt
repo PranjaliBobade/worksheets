@@ -1,0 +1,46 @@
+Q1) a
+Q2) a
+Q3) d
+Q4) d
+Q5) d
+Q6) a
+Q7) a
+Q8) a
+Q9) a
+
+Q10)
+Normal distribution, also known as the Gaussian distribution, is a probability distribution that is symmetric about the mean,
+showing that data near the mean are more frequent in occurrence than data far from the mean.
+In graph form, normal distribution will appear as a bell curve
+
+Q11)
+Techniques for Handling the Missing Data
+Listwise or case deletion. ...
+Pairwise deletion. ...
+Mean substitution. ...
+Regression imputation. ...
+Last observation carried forward. ...
+Maximum likelihood. ...
+Expectation-Maximization. ...
+Multiple imputation.
+
+Imputation vs Removing Data
+Before jumping to the methods of data imputation, we have to understand the reason why data goes missing.
+Missing at Random (MAR): Missing at random means that the propensity for a data point to be missing is not related to the missing data,
+but it is related to some of the observed data
+Missing Completely at Random (MCAR): The fact that a certain value is missing has nothing to do with its hypothetical value and with the values of other variables.
+Missing not at Random (MNAR): Two possible reasons are that the missing value depends on the hypothetical value (e.g. People with high salaries generally do not want to reveal their incomes in surveys) or missing value is dependent on some other variable’s value (e.g. Let’s assume that females generally don’t want to reveal their ages! Here the missing value in age variable is impacted by gender variable)
+
+Q12)
+A/B testing (also known as split testing) is a process of showing two variants of the same web page to different segments of website visitors at the same time and comparing which variant drives more conversions.
+
+Q13)
+It depends on continuous or categorical data.
+
+Q14)
+In statistics, linear regression is a linear approach to modeling the relationship between a scalar response (or dependent variable) and one or more explanatory variables (or independent variables).
+For more than one explanatory variable, the process is called multiple linear regression.
+
+Q15)
+The two main branches of statistics are descriptive statistics and inferential statistics.
+Both of these are employed in scientific analysis of data and both are equally important for the student of statistics.
