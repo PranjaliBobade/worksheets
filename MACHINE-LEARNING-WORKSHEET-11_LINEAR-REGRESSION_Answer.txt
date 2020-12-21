@@ -1,0 +1,68 @@
+Q1.C
+Q2.B
+Q3.A
+Q4.C
+Q5.A
+Q6.B
+Q7.B
+Q8.D
+Q9.A
+Q10.B
+Q11.A
+
+
+Q12. Explain R2 and adjusted R2 metrics?
+Ans-
+R-Squared Scores-
+An R-squared result of 70 to 100 indicates that a given portfolio closely tracks the stock index in question, while a score between 0 and 40 indicates a very low correlation with the index. 
+Higher R-squared values also indicate the reliability of beta readings. Beta measures the volatility of a security or a portfolio.
+While R-squared can return a figure that indicates a level of correlation with an index, it has certain limitations when it comes to measuring the impact of independent variables on the correlation. This is where adjusted R-squared is useful in measuring correlation.
+
+Adjusted R-Squared-
+Adding more independent variables or predictors to a regression model tends to increase the R-squared value, which tempts makers of the model to add even more. 
+This is called overfitting and can return an unwarranted high R-squared value. Adjusted R-squared is used to determine how reliable the correlation is and how much is determined by the addition of independent variables.
+In a portfolio model that has more independent variables, adjusted R-squared will help determine how much of the correlation with the index is due to the addition of those variables. The adjusted R-squared compensates for the addition of variables and only increases if the new predictor enhances the model above what would be obtained by probability. Conversely, it will decrease when a predictor improves the model less than what is predicted by chance.
+
+Q13. Explain the cost function of linear regression?
+Ans-
+There are several ways to learn the parameters of a LR model, I will focus on the approach that best illustrates statistical learning; minimising a cost function.
+Remember that in ML, the focus is on learning from data. This is perhaps better illustrated using a simple analogy. As children we typically learn what is “right” or “good” behaviour by being told NOT to do things or being punished for having done something we shouldn’t. For example, you can imagine a four year-old sitting by a fire to keep warm, but not knowing the danger of fire, she puts her finger into it and gets burned. The next time she sits by the fire, she doesn’t get burned, but she sits too close, gets too hot and has to move away. The third time she sits by the fire she finds the distance that keeps her warm without exposing her to any danger. In other words, through experience and feedback (getting burned, then getting too hot) the kid learns the optimal distance to sit from the fire. The heat from the fire in this example acts as a cost function — it helps the learner to correct / change behaviour to minimize mistakes.
+In ML, cost functions are used to estimate how badly models are performing. Put simply, a cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y. This is typically expressed as a difference or distance between the predicted value and the actual value. The cost function (you may also see this referred to as loss or error.) can be estimated by iteratively running the model to compare estimated predictions against “ground truth” — the known values of y.
+The objective of a ML model, therefore, is to find parameters, weights or a structure that minimises the cost function.
+
+Q14. Differentiate SSE, SSR and SST.
+Ans-
+SST - The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean. we can think of this as the dispersion of the observed variables around the mean – much like the variance in descriptive statistics.
+
+SSR - The second term is the sum of squares due to regression, or SSR. It is the sum of the differences between the predicted value and the mean of the dependent variable. Think of it as a measure that describes how well our line fits the data.
+If this value of SSR is equal to the sum of squares total, it means our regression model captures all the observed variability and is perfect. Once again, we have to mention that another common notation is ESS or explained sum of squares.
+
+SSE - The last term is the sum of squares error, or SSE. The error is the difference between the observed value and the predicted value.
+We usually want to minimize the error. The smaller the error, the better the estimation power of the regression. Finally, I should add that it is also known as RSS or residual sum of squares. Residual as in: remaining or unexplained.
+
+
+Q15. What are the various evaluation metrics for linear regression?
+Ans-
+Evaluation metrics are a measure of how good a model performs and how well it approximates the relationship. Let us look at MSE, MAE, R-squared, Adjusted R-squared, and RMSE.
+
+Mean Squared Error (MSE) - The most common metric for regression tasks is MSE. It has a convex shape. It is the average of the squared difference between the predicted and actual value. Since it is differentiable and has a convex shape.
+MSE penalizes large errors.
+
+Mean Absolute Error (MAE)
+This is simply the average of the absolute difference between the target value and the value predicted by the model. Not preferred in cases where outliers are prominent.
+MAE does not penalize large errors.
+
+R-squared or Coefficient of Determination
+This metric represents the part of the variance of the dependent variable explained by the independent variables of the model. It measures the strength of the relationship between your model and the dependent variable.
+To understand what R-square really represents let us consider the following case where we measure the error of the model with and without the knowledge of the independent variables.
+
+Root Mean Squared Error (RMSE)
+This is the square root of the average of the squared difference of the predicted and actual value.
+R-squared error is better than RMSE. This is because R-squared is a relative measure while RMSE is an absolute measure of fit (highly dependent on the variables — not a normalized measure).
+Basically, RMSE is just the root of the average of squared residuals. We know that residuals are a measure of how distant the points are from the regression line. Thus, RMSE measures the scatter of these residuals.
+
+Adjusted R-squared — selection criterion
+The main difference between adjusted R-squared and R-square is that R-squared describes the amount of variance of the dependent variable represented by every single independent variable, while adjusted R-squared measures variation explained by only the independent variables that actually affect the dependent variable.
+
+
+
